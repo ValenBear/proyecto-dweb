@@ -215,7 +215,9 @@ footer li img{
     justify-content: space-evenly;
 }
 
-
+.main-index h2{
+    margin-top: 2vh;
+}
 /* Menu */
 
 .menu h3{
@@ -476,18 +478,21 @@ table tr td input{
 
 /* Conocenos */
 
-section{
+.section{
     background-color: #222222;
     margin: 20px 40px;
     font-size: 20px;
     padding: 20px;
+}
+
+.section--div--img{
     display: flex;
     flex-flow: wrap row;
     align-items: center;
     justify-content: center;
 }
 
-section p{
+.section p{
     margin: 0 30px;
 }
 
@@ -498,7 +503,6 @@ section p{
 article{
     background-color: #000000;
 }
-
 
 /* RESPONSIVE */
 
@@ -686,7 +690,7 @@ article{
         display: none;
     }
 
-    /* MENu */
+    /* MENU */
 
     .sub-nav-menu{
         display: none;
@@ -729,5 +733,35 @@ article{
 
     .menu1 div .precio, .menu div .precio{
         font-size: 16px;
+    }
+
+    /* Conocenos */
+
+    .section{
+        background-color: unset;
+    }
+
+    .main-conocenos h3{
+        font-size: 25px;
+    }
+
+    .section{
+        padding: 0;
+        display: block;
+        margin: 20px 5px;
+    }
+
+    h5{
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .section p{
+        font-size: 15px;
+    }
+
+    .section__img{
+        width: 46vh;
+        margin: 3vh 0;
     }
 }
