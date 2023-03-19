@@ -383,6 +383,11 @@ iframe {
 
 
 /* Trabaja con nosotros */
+.main--trabajo{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
 
 .h3-trabajo h3{
     text-align: center;
@@ -392,8 +397,12 @@ iframe {
 
 .trabajo-lg {
     background-color: #4444449a;
-    margin: 30px 200px;
+    margin: 30px 0px;
     padding: 10px;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
 form label{
@@ -405,7 +414,7 @@ form input {
     background-color: #f7f6f62a;
     outline: #ffffff solid 1px;
     color: #ffffff;
-    height: 40px;
+    height: 4vh;
     align-items: center;
     font-size: 20px;
 }
@@ -417,8 +426,8 @@ form table{
 }
 
 table tr td input{
-    height: 60px;
-    width: 320px;
+    height: 5vh;
+    width: 30vh;
 }
 
 .trabajo-lg .form-lg div{
@@ -431,15 +440,15 @@ table tr td input{
 .trabajo-lg .form-lg div input{
     display: flex;
     margin-bottom: 40px;
-    width: 220px;
+    width: 30vh;
     justify-content: center;
 }
 
 .trabajo-lg form div .enviar{
     color: #ffffff;
     margin-top: 20px;
-    height: 40px;
-    width: 120px;
+    height: 4vh;
+    width: 10vw;
 }
 
 .trabajo-sm{
@@ -597,7 +606,12 @@ article{
     }
 
     .submenu-index{
-        display: none;
+        flex-flow: olumn;
+    }
+
+    .submenu-index a img{
+        width: 33.4vw;
+        height: auto;
     }
 
     .main-index h2{
@@ -612,6 +626,10 @@ article{
         justify-content: center;
         display: flex;
         font-size: 25px;
+    }
+
+    .header-index .titulo{
+        display: none;
     }
 
     /* Trabaja con nosotros */
@@ -761,7 +779,7 @@ article{
     }
 
     .section__img{
-        width: 46vh;
+        width: 90vw;
         margin: 3vh 0;
     }
 }
