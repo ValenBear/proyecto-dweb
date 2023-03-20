@@ -605,12 +605,8 @@ article{
         height: auto;
     }
 
-    .submenu-index{
-        flex-flow: olumn;
-    }
-
     .submenu-index a img{
-        width: 33vw;
+        width: 34vw;
         height: auto;
     }
 
