@@ -190,6 +190,10 @@ footer li img{
 
 /* Index */
 
+.main-index .submenu-index img:hover{
+    opacity: 100%;
+}
+
 .main-index div img{
     height: 200px;
     opacity: 50%;
@@ -213,6 +217,7 @@ footer li img{
     display: flex;
     flex-flow: wrap row;
     justify-content: space-evenly;
+    margin: 0 10vw;
 }
 
 .main-index h2{
@@ -626,6 +631,10 @@ article{
 
     .header-index .titulo{
         display: none;
+    }
+
+    .main-index .submenu-index img{
+        opacity: 90%;
     }
 
     /* Trabaja con nosotros */

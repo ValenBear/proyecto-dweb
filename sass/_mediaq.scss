@@ -1,0 +1,236 @@
+@media (min-width:577px){
+    .navbar{
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        height: 100px;
+        .container-fluid{
+            display: none;
+        }
+    } 
+    .foto-fondo img{
+        width: 50%;
+    }
+    .main-index .enlace-index{
+        display: none;
+    }
+    .form-sm{
+        display: none;
+    }
+    .trabajo-sm{
+        display: none;
+    }
+    .sucursales hr{
+        display: none;
+    }
+    .div-sucursales span{
+        display: none;
+    }
+}
+
+
+@media (max-width:576px){
+
+    .header{
+        .titulo h1{
+            display: none;
+        }
+        h1{
+            background-color: unset;
+            font-size: 35px;
+        }
+        .navbar{
+            a img{
+                width: 60px;
+                border-radius: 50px;
+            }
+            div ul li{
+            justify-content: center;
+            border-bottom: #ffffff 1px solid;
+            text-align: left;
+            }
+        }
+        .nav-bar-mio{
+            display: none;
+        }    
+        .subtitle{
+            font-size: 30px;
+        }
+    }
+
+    footer{
+        p{
+            font-size: 12px;
+            span{
+            display: none;
+            }
+        }
+        ul li a{
+            img{
+            width: 30px;
+            height: auto;
+            }
+            .instagram{
+                width: 25px;
+                height: auto;
+            }
+        }
+    
+    } 
+
+    .main-index{
+        h2{
+            display: none;
+        }
+        a{
+            font-family: 'Fjalla One', sans-serif;
+            font-weight: 400;
+            color: #ffffff;
+            text-decoration: none;
+            justify-content: center;
+            display: flex;
+            font-size: 25px;
+        }
+        .foto-fondo img{
+            width: 100%;
+            height: auto;
+        }
+        .submenu-index a img{
+            width: auto;
+            height: 15vh;
+            opacity: 90%;
+        }
+    }
+
+    .main--trabajo{
+        .h3-trabajo h3{
+            font-size: 20px;
+        }
+        .trabajo-lg{
+            display: none;
+        }
+        .trabajo-sm form input {
+            height: 30px;
+            font-size: 15px;
+        }
+    }
+
+    .main--sucursales{
+        .sucursales{
+            background-color: unset;
+            margin: 0 20px;
+            padding: 0px;
+            height: 250px;
+            h3{
+                font-size: 25px;
+                margin: 30px 0 0 10px;
+            }
+            .div-sucursales{
+                grid-template-areas: 
+                "iframe direccion"
+                "iframe horario";
+                grid-template-columns: 167.6px 167.6px;
+                grid-template-rows: 100px 100px;
+                width: 335.2px;
+                justify-content: center;
+                margin: 0;
+                .iframe{
+                    grid-area: iframe;
+                    width: 40vw;
+                }
+                .direccion{
+                    grid-area: direccion;
+                    .telefono{
+                        display: none;
+                    }
+                }
+                .horario{
+                    grid-area: horario;
+                    .hora{
+                        display: none;
+                    }
+                }
+                div h4{
+                    display: none;
+                } 
+                iframe{
+                    height: 160px;
+                    width: 160px;
+                } 
+                div p{
+                    font-size: 13px;
+                }                    
+            }
+        }
+    }
+
+    .main-menu{
+        .sub-nav-menu{
+            display: none;
+        }
+        .supermenu{
+            margin: 0;
+            padding: 0;
+            .menu{
+                background-color: unset;
+                margin: 30px 0 15px 0;
+                padding: 0;
+                h3{
+                    font-size: 20px;
+                    margin: 20px 0 20px 60px;
+                }
+                .medmenu{
+                    display: inline-block;
+                    div{
+                        display: grid;
+                        height: auto;
+                        width: auto ;
+                        grid-template-columns: 1fr 3fr 1fr;
+                        align-items: center;
+                        justify-content: center;
+                        img{
+                            height: 100px;
+                            width: 100px;
+                            border: 1,5px solid #000000;
+                            outline: 1,5px solid #ffffff;
+                        }
+                        p{
+                            font-size: 13px;
+                        }
+                        .precio{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Conocenos */
+
+    .main-conocenos{
+        h3{
+            font-size: 25px;
+        }
+        article{
+            .section{
+                padding: 0;
+                display: block;
+                margin: 20px 5px;
+                background-color: unset;
+                h5{
+                    text-align: left;
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 15px;
+                }
+                .section__img{
+                    width: 90vw;
+                    margin: 3vh 0;
+                }
+            
+            }
+        }
+    }
+}

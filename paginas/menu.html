@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../Imagenes/Oso-hamburguesa.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../imagenes/osologo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../sass/main.css">
     <title>Bear Burger - Menu</title>
 </head>
 <body>
@@ -23,6 +23,9 @@
             <a class="navbar-brand" href="../index.html"><img src="../imagenes/osologo.png" alt="Logo de un oso"></a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio<a>
+                </li>                
                   <li class="nav-item">
                       <a class="nav-link" href="./menu.html">Menu<a>
                     </li>
@@ -54,10 +57,10 @@
         </div>
     </header>
 
-    <main id="main-menu">
+    <main class="main-menu">
         <div class="sub-nav-menu">
             <hr>
-            <ul > 
+            <ul> 
                 <li class="nav-item"><a href="#burgers">Hamburguesas </a></li>
                 <li class="nav-item"><a href="#papas">Entradas</a></li>
                 <li class="nav-item"><a href="#bebidas">Bebidas sin alcohol</a></li>
@@ -67,9 +70,11 @@
             <hr>
         </div>
         <div class="supermenu">
-            <div class="menu1">
+          
+            <div class="menu">
                 <h3 id="burgers">Hamburguesas</h3>
                 <hr>
+                <div class="medmenu">
                 <div><img src="../imagenes/menu/1-simple.webp" alt="hamburguesa"> <p>Hamburguesa 120gr con cheddar</p>
                 <p class="precio">$900</p></div>
                 <div><img src="../imagenes/menu/2-doble.webp" alt="hamburguesa doble"> <p>Hamburguesa doble 120gr con cheddar</p><p class="precio">$1200</p></div>
@@ -77,46 +82,55 @@
                 <div><img src="../imagenes/menu/4-bacondoble.webp" alt="hamburguesa con bacon doble"><p>Hamburguesa doble 120gr con cheddar y bacon</p><p class="precio">$1300</p></div>
                 <div><img src="../imagenes/menu/5-huevo.webp" alt="hamburguesa con huevo"><p>Hamburguesa 120gr con cheddar y huevo</p><p class="precio">$1000</p></div>
                 <div><img src="../imagenes/menu/6-huevo.webp" alt="hamburguesa con huevo doble"><p>Hamburguesa 120gr con cheddar y huevo</p><p class="precio">$1300</p></div>
+              </div>
             </div>
 
             <div class="menu">
                 <h3 id="papas">Entradas</h3>
                 <hr>
-                <div><img src="../imagenes/menu/7-fritas.webp" alt="papas fritas"><p>Porcion de papas fritas grande</p><p class="precio">$600</p></div>
-                <div><img src="../imagenes/menu/8-fritascheddar.webp" alt="papas fritas con cheddar"><p>Porcion de papas fritas con cheddar</p><p class="precio">$750</p></div>
-                <div><img src="../imagenes/menu/9-fritascyb.webp" alt="papas fritas con cheddar y bacon"><p>Porcion de papas fritas con cheddar y bacon</p><p class="precio">$850</p></div>
-                <div><img src="../imagenes/menu/10-aroscebolla.webp" alt="aros de cebolla"><p>Porcion de aros de cebolla grande</p><p class="precio">$700</p></div>
-                <div><img src="../imagenes/menu/11-bastones.webp" alt="bastones de muzzarella"><p>Porcion de bastones de muzzarella</p><p class="precio">$800</p></div>
+                <div class="medmenu">
+                  <div><img src="../imagenes/menu/7-fritas.webp" alt="papas fritas"><p>Porcion de papas fritas grande</p><p class="precio">$600</p></div>
+                  <div><img src="../imagenes/menu/8-fritascheddar.webp" alt="papas fritas con cheddar"><p>Porcion de papas fritas con cheddar</p><p class="precio">$750</p></div>
+                  <div><img src="../imagenes/menu/9-fritascyb.webp" alt="papas fritas con cheddar y bacon"><p>Porcion de papas fritas con cheddar y bacon</p><p class="precio">$850</p></div>
+                  <div><img src="../imagenes/menu/10-aroscebolla.webp" alt="aros de cebolla"><p>Porcion de aros de cebolla grande</p><p class="precio">$700</p></div>
+                  <div><img src="../imagenes/menu/11-bastones.webp" alt="bastones de muzzarella"><p>Porcion de bastones de muzzarella</p><p class="precio">$800</p></div>
+              </div>
             </div>
 
             <div class="menu">
                 <h3 id="bebidas">Bebidas sin alcohol</h3>
                 <hr>
+              <div class="medmenu">
                 <div><img src="../imagenes/menu/12-pepsi.webp" alt="pepsi"><p>Pepsi 354ml</p><p class="precio">$400</p></div>
                 <div><img src="../imagenes/menu/14-7up.webp" alt="7up"><p>7up 354ml</p><p class="precio">$400</p></div>
                 <div><img src="../imagenes/menu/16-mirinda.webp" alt="mirinda"><p>Mirinda 354ml</p><p class="precio">$400</p></div>
                 <div><img src="../imagenes/menu/17-pasodelostoros.webp" alt="paso de los toros"><p>Paso de los toros 269ml</p><p class="precio">$350</p></div>
                 <div><img src="../imagenes/menu/18-agua.webp" alt="agua"><p>Botella de Agua 500ml</p><p class="precio">$400</p></div>
+              </div>
             </div>
 
             <div class="menu">
             <h3 id="alcohol">Bebidas con alcohol</h3>
                 <hr>
+              <div class="medmenu">
                 <div><img src="../imagenes/menu/19-corona.webp" alt="Cerveza"><p>Botella de Corona</p><p class="precio">$600</p></div>
                 <div><img src="../imagenes/menu/20-honey.webp" alt="cerveza honey"><p>Pinta de cerveza Honey</p><p class="precio">$500</p></div>
                 <div><img src="../imagenes/menu/21-fernet.webp" alt="trago de fernet"><p>Fernet</p><p class="precio">$700</p></div>
                 <div><img src="../imagenes/menu/22-campari.webp" alt="trago de campari"><p>Campari</p><p class="precio">$700</p></div>
                 <div><img src="../imagenes/menu/23-aperol.webp" alt="trago de aperol"><p>Aperol</p><p class="precio">$700</p></div>
+              </div>
             </div>
 
             <div class="menu">
             <h3 id="helados">Helados</h3>
                 <hr>
+              <div class="medmenu">
                 <div><img src="../imagenes/menu/24-heladoddl.webp" alt="helado de dulce de leche"><p>Helado artesanal sabor Dulce de leche</p><p class="precio">$550</p></div>
                 <div><img src="../imagenes/menu/25-heladoch.webp" alt="helado de chocolate"><p>Helado artesanal sabor Chocolate</p><p class="precio">$550</p></div>
                 <div><img src="../imagenes/menu/26-heladolim.webp" alt="hleado de limon"><p>Helado artesanal sabor Limon</p><p class="precio">$550</p></div>
                 <div><img src="../imagenes/menu/27-heladoban.webp" alt="helado de banana"><p>Helado artesanal sabor Banana</p><p class="precio">$550</p></div>
                 <div><img src="../imagenes/menu/28-heladofrut.webp" alt="helado de frutilla"><p>Helado artesanal sabor Frutilla</p><p class="precio">$550</p></div>
+              </div>
             </div>
         </div>
     
