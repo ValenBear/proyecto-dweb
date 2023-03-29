@@ -1,4 +1,5 @@
 
+@import 'variables';
 @import 'header';
 @import 'footer';
 @import 'index';
@@ -18,12 +19,12 @@ ol, ul{
     padding-left: 0;
 }
 body {
-    background-color: black;
-    color: #ffffff;
+    background-color: $dark-bg;
+    color: $txt-color;
 }
 h1{
     font-family: 'Fjalla One', sans-serif;
-    font-size: 50px;
+    font-size: $ht-font;
     color: white;
     text-align: center;
     padding-top: 10px;
@@ -31,33 +32,33 @@ h1{
 }
 h2{
     font-family: 'Fjalla One', sans-serif;
-    font-size: 40px;
-    color: white;
+    font-size: $mt-font;
+    color: $txt-color;
     text-align: center;
 }
 .subtitle{
     font-family: 'Fjalla One', sans-serif;
-    font-size: 50px;
-    color: white;
+    font-size: $ht-font;
+    color: $txt-color;
     text-align: center;
     padding-top: 10px;
     margin: 25px 0 15px;
 }
 h3{
     font-family: 'Fjalla One', sans-serif;
-    font-size: 40px;
-    color: white;
+    font-size: $mt-font;
+    color: $txt-color;
     text-align:left;
     margin-left: 10px;
 }
 h4{
     font-family: 'Fjalla One', sans-serif;
-    color: white;
+    color: $txt-color;
 }
 h5{
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    color: white;
+    font-size: $st-font;
+    color: $txt-color;
     text-align:left;
     margin-left: 10px;
 }
@@ -77,4 +78,3 @@ ul{
         justify-content: center;
     }
 }
-

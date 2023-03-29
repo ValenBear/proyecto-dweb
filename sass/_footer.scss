@@ -1,12 +1,12 @@
 footer{
     font-weight: 400;
-    color: white;
+    color: $txt-color;
     text-align: center;
-    background-color: #000000;
+    $dark-bg: #000000;
     p{
         margin: 0;
         opacity: 60%;
-        font-size: 13px;
+        font-size: $par-font - 2;
         justify-content: center;
     }
     ul{

@@ -1,5 +1,6 @@
 .sucursales{
-    background-color: #4444449a;
+    background-color: $grey-div-bg;
+    background: radial-gradient( $grad-dark);
     margin: 30px 40px;
     padding: 30px;
     height: 370px;
@@ -17,7 +18,7 @@
             p {
             font-size: 20px;}
             h4 {
-                font-size: 30px;
+                font-size: $st-font;
             }            
         }
         .iframe {

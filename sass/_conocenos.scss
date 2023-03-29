@@ -1,22 +1,31 @@
 .main-conocenos{
     article{
-        background-color: #000000;
+        background-color: $dark-bg;
+        .section2{
+            animation-delay: 2s;
+        }
         .section{
-            background-color: #222222;
-            margin: 20px 40px;
-            font-size: 20px;
-            padding: 20px;
+            background-color: $grey-div-bg;
+            background: radial-gradient( $grad-dark);
+            margin: 5vh 4vw;
+            font-size: $par-font + 5;
+            padding: 2vw;
+            h5{
+                animation-delay: 0.5;
+            }
             .section--div--img{
+                animation-delay: 1.5s;
                 display: flex;
                 flex-flow: wrap row;
                 align-items: center;
                 justify-content: center;
                 .section__img{
-                    margin: 30px 0 20px 10px;
+                    margin: 3vh 0 2vh 1vw;
                 }
             }
             p{
                 margin: 0 30px;
+                animation-delay: 1s;
             }
         }
     }

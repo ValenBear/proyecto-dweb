@@ -2,7 +2,7 @@
     .navbar{
         margin: 0;
         padding: 0;
-        background-color: #000000;
+        background-color: $dark-bg;
         height: 100px;
         .container-fluid{
             display: none;
@@ -31,15 +31,26 @@
 
 @media (max-width:576px){
 
+    hr{
+        opacity: 100%;
+    }
     .header{
+        margin-bottom: 7.5vh;
+        hr{
+            display: none;
+        }
         .titulo h1{
             display: none;
         }
         h1{
             background-color: unset;
-            font-size: 35px;
+            font-size: $st-font + 5;
         }
         .navbar{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
             a img{
                 width: 60px;
                 border-radius: 50px;
@@ -54,13 +65,13 @@
             display: none;
         }    
         .subtitle{
-            font-size: 30px;
+            font-size: $st-font;
         }
     }
 
     footer{
         p{
-            font-size: 12px;
+            font-size: $par-font - 3;
             span{
             display: none;
             }
@@ -79,21 +90,23 @@
     } 
 
     .main-index{
+        margin-top: 13vh;
         h2{
             display: none;
         }
         a{
             font-family: 'Fjalla One', sans-serif;
             font-weight: 400;
-            color: #ffffff;
+            color: $txt-color;
             text-decoration: none;
             justify-content: center;
             display: flex;
-            font-size: 25px;
+            font-size: $a-font;
         }
         .foto-fondo img{
             width: 100%;
             height: auto;
+            margin-top: 4.5vh;
         }
         .submenu-index a img{
             width: auto;
@@ -104,34 +117,34 @@
 
     .main--trabajo{
         .h3-trabajo h3{
-            font-size: 20px;
+            font-size: $par-font + 5;
         }
         .trabajo-lg{
             display: none;
         }
         .trabajo-sm form input {
             height: 30px;
-            font-size: 15px;
+            font-size: $par-font;
         }
     }
 
     .main--sucursales{
         .sucursales{
-            background-color: unset;
+            background: unset;
             margin: 0 20px;
             padding: 0px;
             height: 250px;
             h3{
-                font-size: 25px;
+                font-size: $st-font - 5;
                 margin: 30px 0 0 10px;
             }
             .div-sucursales{
                 grid-template-areas: 
                 "iframe direccion"
                 "iframe horario";
-                grid-template-columns: 167.6px 167.6px;
+                grid-template-columns: 45vw 45vw;
                 grid-template-rows: 100px 100px;
-                width: 335.2px;
+                width: 100%;
                 justify-content: center;
                 margin: 0;
                 .iframe{
@@ -172,7 +185,7 @@
             margin: 0;
             padding: 0;
             .menu{
-                background-color: unset;
+                background: unset;
                 margin: 30px 0 15px 0;
                 padding: 0;
                 h3{
@@ -206,18 +219,17 @@
         }
     }
 
-    /* Conocenos */
-
     .main-conocenos{
         h3{
             font-size: 25px;
         }
         article{
             .section{
+                background: unset;
+
                 padding: 0;
                 display: block;
                 margin: 20px 5px;
-                background-color: unset;
                 h5{
                     text-align: left;
                     font-size: 20px;

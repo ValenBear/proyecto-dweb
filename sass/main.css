@@ -18,12 +18,13 @@
   text-decoration: none;
   font-weight: 700;
   text-shadow: #000000 -3px 3px 5px;
+  transition: all 0.2s;
 }
 .header nav .nav-bar-mio ul li a:hover {
   font-size: 35px;
 }
 .header nav .nav-bar-mio .nav-menu {
-  background-color: #222222;
+  background: radial-gradient(#222222, #151515);
   padding-bottom: 0px;
   padding-top: 40px;
   height: 100px;
@@ -43,9 +44,8 @@
 
 footer {
   font-weight: 400;
-  color: white;
+  color: #ffffff;
   text-align: center;
-  background-color: #000000;
 }
 footer p {
   margin: 0;
@@ -98,17 +98,19 @@ footer ul li a .instagram {
   width: auto;
   opacity: 50%;
   border: 3px solid white;
-  margin: 20px 0;
+  margin: 1vh 0;
+  transition: all 0.15s;
 }
 .main-index .submenu-index img:hover {
   opacity: 100%;
 }
 
 .main-menu div hr {
-  margin-top: 0 10px 0 10px;
+  margin-top: 10px;
 }
 .main-menu .sub-nav-menu {
   background-color: #222222;
+  background: radial-gradient(#222222, #151515);
   margin: 30px 40px;
 }
 .main-menu .sub-nav-menu hr {
@@ -124,9 +126,13 @@ footer ul li a .instagram {
   text-shadow: none;
   color: #8c8a8a;
   text-decoration: none;
+  margin: 0 1vw;
+  text-align: center;
+  justify-content: center;
+  transition: all 0.25s;
 }
-.main-menu .sub-nav-menu li:hover {
-  color: #ffffff;
+.main-menu .sub-nav-menu li a:hover {
+  color: #fff;
 }
 .main-menu .supermenu {
   margin: 30px 40px;
@@ -134,7 +140,7 @@ footer ul li a .instagram {
 }
 .main-menu .supermenu .menu {
   margin-bottom: 90px;
-  background-color: #222222;
+  background: radial-gradient(#222222, #151515);
   padding: 20px;
 }
 .main-menu .supermenu .menu h3 {
@@ -142,22 +148,22 @@ footer ul li a .instagram {
 }
 .main-menu .supermenu .menu .medmenu {
   display: flex;
+  align-items: center;
 }
 .main-menu .supermenu .menu .medmenu div {
   display: flex;
-  height: 240px;
+  height: 40vhpx;
   width: 270px;
-  margin: 25px 0;
-  flex-flow: row wrap;
+  margin: 25px 5px;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: center;
 }
 .main-menu .supermenu .menu .medmenu div img {
-  height: 200px;
-  margin: 5px 20px 5px 20px;
+  height: 20vh;
+  margin: 5px 2vw 5px 2vw;
   border: 3px solid #000000;
   outline: 3px solid #ffffff;
-  height: 150px;
   text-align: center;
   align-items: center;
 }
@@ -171,7 +177,8 @@ footer ul li a .instagram {
 }
 
 .sucursales {
-  background-color: rgba(68, 68, 68, 0.6039215686);
+  background-color: #222222;
+  background: radial-gradient(#222222, #151515);
   margin: 30px 40px;
   padding: 30px;
   height: 370px;
@@ -209,7 +216,8 @@ footer ul li a .instagram {
   font-size: 30px;
 }
 .main--trabajo .trabajo-lg {
-  background-color: rgba(68, 68, 68, 0.6039215686);
+  background-color: #222222;
+  background: radial-gradient(#222222, #151515);
   margin: 30px 0px;
   padding: 10px;
   width: 50vw;
@@ -257,7 +265,7 @@ footer ul li a .instagram {
   font-size: 20px;
 }
 .main--trabajo .trabajo-sm {
-  background-color: rgba(68, 68, 68, 0.6039215686);
+  background: radial-gradient(#222222, #151515);
   margin: 10px 20px;
   padding: 20px;
 }
@@ -288,23 +296,32 @@ footer ul li a .instagram {
 .main-conocenos article {
   background-color: #000000;
 }
+.main-conocenos article .section2 {
+  animation-delay: 2s;
+}
 .main-conocenos article .section {
   background-color: #222222;
-  margin: 20px 40px;
+  background: radial-gradient(#222222, #151515);
+  margin: 5vh 4vw;
   font-size: 20px;
-  padding: 20px;
+  padding: 2vw;
+}
+.main-conocenos article .section h5 {
+  animation-delay: 0.5;
 }
 .main-conocenos article .section .section--div--img {
+  animation-delay: 1.5s;
   display: flex;
   flex-flow: wrap row;
   align-items: center;
   justify-content: center;
 }
 .main-conocenos article .section .section--div--img .section__img {
-  margin: 30px 0 20px 10px;
+  margin: 3vh 0 2vh 1vw;
 }
 .main-conocenos article .section p {
   margin: 0 30px;
+  animation-delay: 1s;
 }
 
 @media (min-width: 577px) {
@@ -337,12 +354,27 @@ footer ul li a .instagram {
   }
 }
 @media (max-width: 576px) {
+  hr {
+    opacity: 100%;
+  }
+  .header {
+    margin-bottom: 7.5vh;
+  }
+  .header hr {
+    display: none;
+  }
   .header .titulo h1 {
     display: none;
   }
   .header h1 {
     background-color: unset;
     font-size: 35px;
+  }
+  .header .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
   }
   .header .navbar a img {
     width: 60px;
@@ -373,6 +405,9 @@ footer ul li a .instagram {
     width: 25px;
     height: auto;
   }
+  .main-index {
+    margin-top: 13vh;
+  }
   .main-index h2 {
     display: none;
   }
@@ -388,6 +423,7 @@ footer ul li a .instagram {
   .main-index .foto-fondo img {
     width: 100%;
     height: auto;
+    margin-top: 4.5vh;
   }
   .main-index .submenu-index a img {
     width: auto;
@@ -405,7 +441,7 @@ footer ul li a .instagram {
     font-size: 15px;
   }
   .main--sucursales .sucursales {
-    background-color: unset;
+    background: unset;
     margin: 0 20px;
     padding: 0px;
     height: 250px;
@@ -416,9 +452,9 @@ footer ul li a .instagram {
   }
   .main--sucursales .sucursales .div-sucursales {
     grid-template-areas: "iframe direccion" "iframe horario";
-    grid-template-columns: 167.6px 167.6px;
+    grid-template-columns: 45vw 45vw;
     grid-template-rows: 100px 100px;
-    width: 335.2px;
+    width: 100%;
     justify-content: center;
     margin: 0;
   }
@@ -456,7 +492,7 @@ footer ul li a .instagram {
     padding: 0;
   }
   .main-menu .supermenu .menu {
-    background-color: unset;
+    background: unset;
     margin: 30px 0 15px 0;
     padding: 0;
   }
@@ -487,15 +523,14 @@ footer ul li a .instagram {
   .main-menu .supermenu .menu .medmenu div .precio {
     font-size: 16px;
   }
-  /* Conocenos */
   .main-conocenos h3 {
     font-size: 25px;
   }
   .main-conocenos article .section {
+    background: unset;
     padding: 0;
     display: block;
     margin: 20px 5px;
-    background-color: unset;
   }
   .main-conocenos article .section h5 {
     text-align: left;
@@ -521,7 +556,7 @@ ol, ul {
 }
 
 body {
-  background-color: black;
+  background-color: #000000;
   color: #ffffff;
 }
 
@@ -537,14 +572,14 @@ h1 {
 h2 {
   font-family: "Fjalla One", sans-serif;
   font-size: 40px;
-  color: white;
+  color: #ffffff;
   text-align: center;
 }
 
 .subtitle {
   font-family: "Fjalla One", sans-serif;
   font-size: 50px;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding-top: 10px;
   margin: 25px 0 15px;
@@ -553,20 +588,20 @@ h2 {
 h3 {
   font-family: "Fjalla One", sans-serif;
   font-size: 40px;
-  color: white;
+  color: #ffffff;
   text-align: left;
   margin-left: 10px;
 }
 
 h4 {
   font-family: "Fjalla One", sans-serif;
-  color: white;
+  color: #ffffff;
 }
 
 h5 {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
-  color: white;
+  color: #ffffff;
   text-align: left;
   margin-left: 10px;
 }
