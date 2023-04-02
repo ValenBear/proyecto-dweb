@@ -4,7 +4,6 @@
         margin-top: 10px;
     }
     .sub-nav-menu{
-        background-color: $grey-div-bg;
         background: radial-gradient( $grad-dark);
         margin: 30px 40px;
         hr{
@@ -45,7 +44,7 @@
                     align-items: center;
                     div{
                         display: flex;
-                        height: 40vhpx;
+                        height: 40vh;
                         width: 270px;
                         margin: 25px 5px;
                         flex-flow: column wrap;
@@ -53,11 +52,15 @@
                         justify-content: center;
                         img{
                             height: 20vh;
-                            margin: 5px 2vw 5px 2vw;
-                            border: 3px solid #000000;
-                            outline: 3px solid #ffffff;
+                            margin: 5px 2vw 15px 2vw;
+                            opacity: 80%;
+                            transition: all .5s;
+                            @include bordimg;
                             text-align: center;
                             align-items: center;
+                            &:hover{
+                                opacity: 100%;
+                            }
                         }
                         p{
                             text-align: center;

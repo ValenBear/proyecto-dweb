@@ -8,15 +8,14 @@
             background-color: $grey-div-bg;
             background: radial-gradient( $grad-dark);
             margin: 5vh 4vw;
-            font-size: $par-font + 5;
+            font-size: $a-font;
             padding: 2vw;
             h5{
                 animation-delay: 0.5;
             }
             .section--div--img{
                 animation-delay: 1.5s;
-                display: flex;
-                flex-flow: wrap row;
+                @include flxwrp;
                 align-items: center;
                 justify-content: center;
                 .section__img{

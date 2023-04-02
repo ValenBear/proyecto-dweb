@@ -1,6 +1,22 @@
 .main-index{
-    h2{
+    .ind-men{
         margin-top: 2vh;
+        font-family: 'Fjalla One', sans-serif;
+        font-size: $mt-font;
+        color: $txt-color;
+        text-align: center;
+    }
+    .intro{
+        margin: 10vh 5vw 5vh;
+        display: flex;
+        justify-content: center;
+        h2{
+            font-size: $mt-font - 3;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            animation-delay: 1s;
+            animation-duration: 3s;
+        }
     }
     .foto-fondo{
         justify-content: center;
@@ -10,18 +26,21 @@
             opacity: 66%;
             border: 0;
             margin-top: 0;
+            transition: all 6s;
+            &:hover{
+                opacity: 95%; /* es mera decoracion para que haga un fade lento a una opacacidad casi total */
+            }
         }
     }
     .submenu-index{
-        display: flex;
-        flex-flow: wrap row;
+        @include flxwrp;
         justify-content: space-evenly;
         margin: 0 10vw;
         img{
             height: 20vh;
             width: auto;
             opacity: 50%;
-            border: 3px solid white;
+            @include bordimg;
             margin: 1vh 0;
             transition: all .15s;
             &:hover{

@@ -74,8 +74,24 @@ footer ul li a .instagram {
   margin-bottom: 5px;
 }
 
-.main-index h2 {
+.main-index .ind-men {
   margin-top: 2vh;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+.main-index .intro {
+  margin: 10vh 5vw 5vh;
+  display: flex;
+  justify-content: center;
+}
+.main-index .intro h2 {
+  font-size: 37px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  animation-delay: 1s;
+  animation-duration: 3s;
 }
 .main-index .foto-fondo {
   justify-content: center;
@@ -86,6 +102,10 @@ footer ul li a .instagram {
   opacity: 66%;
   border: 0;
   margin-top: 0;
+  transition: all 6s;
+}
+.main-index .foto-fondo img:hover {
+  opacity: 95%; /* es mera decoracion para que haga un fade lento a una opacacidad casi total */
 }
 .main-index .submenu-index {
   display: flex;
@@ -97,7 +117,8 @@ footer ul li a .instagram {
   height: 20vh;
   width: auto;
   opacity: 50%;
-  border: 3px solid white;
+  border: 2px solid #000000;
+  outline: 3px solid #ffffff;
   margin: 1vh 0;
   transition: all 0.15s;
 }
@@ -109,7 +130,6 @@ footer ul li a .instagram {
   margin-top: 10px;
 }
 .main-menu .sub-nav-menu {
-  background-color: #222222;
   background: radial-gradient(#222222, #151515);
   margin: 30px 40px;
 }
@@ -152,7 +172,7 @@ footer ul li a .instagram {
 }
 .main-menu .supermenu .menu .medmenu div {
   display: flex;
-  height: 40vhpx;
+  height: 40vh;
   width: 270px;
   margin: 25px 5px;
   flex-flow: column wrap;
@@ -161,11 +181,16 @@ footer ul li a .instagram {
 }
 .main-menu .supermenu .menu .medmenu div img {
   height: 20vh;
-  margin: 5px 2vw 5px 2vw;
-  border: 3px solid #000000;
+  margin: 5px 2vw 15px 2vw;
+  opacity: 80%;
+  transition: all 0.5s;
+  border: 2px solid #000000;
   outline: 3px solid #ffffff;
   text-align: center;
   align-items: center;
+}
+.main-menu .supermenu .menu .medmenu div img:hover {
+  opacity: 100%;
 }
 .main-menu .supermenu .menu .medmenu div p {
   text-align: center;
@@ -216,14 +241,13 @@ footer ul li a .instagram {
   font-size: 30px;
 }
 .main--trabajo .trabajo-lg {
-  background-color: #222222;
   background: radial-gradient(#222222, #151515);
-  margin: 30px 0px;
-  padding: 10px;
+  padding: 20px;
+  margin: 10px 20px;
   width: 50vw;
-  display: flex;
   justify-content: center;
-  flex-flow: row wrap;
+  display: flex;
+  flex-flow: wrap row;
 }
 .main--trabajo .trabajo-lg .form-lg div, .main--trabajo .trabajo-lg form div {
   display: flex;
@@ -303,7 +327,7 @@ footer ul li a .instagram {
   background-color: #222222;
   background: radial-gradient(#222222, #151515);
   margin: 5vh 4vw;
-  font-size: 20px;
+  font-size: 25px;
   padding: 2vw;
 }
 .main-conocenos article .section h5 {
@@ -389,7 +413,7 @@ footer ul li a .instagram {
     display: none;
   }
   .header .subtitle {
-    font-size: 30px;
+    display: none;
   }
   footer p {
     font-size: 12px;
@@ -408,8 +432,11 @@ footer ul li a .instagram {
   .main-index {
     margin-top: 13vh;
   }
-  .main-index h2 {
+  .main-index h3 {
     display: none;
+  }
+  .main-index .intro h2 {
+    font-size: 18px;
   }
   .main-index a {
     font-family: "Fjalla One", sans-serif;
@@ -428,7 +455,12 @@ footer ul li a .instagram {
   .main-index .submenu-index a img {
     width: auto;
     height: 15vh;
-    opacity: 90%;
+    opacity: 70%;
+    outline: 1px white solid;
+    border: none;
+  }
+  .main--trabajo {
+    margin-top: 18vh;
   }
   .main--trabajo .h3-trabajo h3 {
     font-size: 20px;
@@ -439,6 +471,9 @@ footer ul li a .instagram {
   .main--trabajo .trabajo-sm form input {
     height: 30px;
     font-size: 15px;
+  }
+  .main--sucursales {
+    margin-top: 18vh;
   }
   .main--sucursales .sucursales {
     background: unset;
@@ -484,6 +519,9 @@ footer ul li a .instagram {
   .main--sucursales .sucursales .div-sucursales div p {
     font-size: 13px;
   }
+  .main-menu {
+    margin-top: 18vh;
+  }
   .main-menu .sub-nav-menu {
     display: none;
   }
@@ -522,6 +560,9 @@ footer ul li a .instagram {
   }
   .main-menu .supermenu .menu .medmenu div .precio {
     font-size: 16px;
+  }
+  .main-conocenos {
+    margin-top: 18vh;
   }
   .main-conocenos h3 {
     font-size: 25px;

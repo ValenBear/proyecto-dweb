@@ -6,6 +6,18 @@ $par-font: 15px;
 $txt-color: #ffffff;
 $grey-div-bg: #222222;
 $dark-bg: #000000;
-$grad-dark: #222222, #151515
+$grad-dark: #222222, #151515;
 
+@mixin bgmaindiv {
+    background: radial-gradient( $grad-dark);
+}
 
+@mixin flxwrp {
+    display: flex;
+    flex-flow: wrap row;
+}
+
+@mixin bordimg {
+    border: 2px solid #000000;
+    outline: 3px solid #ffffff;
+}
