@@ -2,7 +2,6 @@ footer{
     font-weight: 400;
     color: $txt-color;
     text-align: center;
-    $dark-bg: #000000;
     p{
         margin: 0;
         opacity: 60%;
@@ -10,7 +9,7 @@ footer{
         justify-content: center;
     }
     ul{
-        display: flex;
+        @include flxwrp;
         justify-content: center;
         li{
             margin: 0 20px;

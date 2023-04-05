@@ -4,7 +4,7 @@
         margin-top: 10px;
     }
     .sub-nav-menu{
-        background: radial-gradient( $grad-dark);
+        @include bgmaindiv;
         margin: 30px 40px;
         hr{
             margin: 10px 0px;
@@ -33,7 +33,7 @@
         padding: 20px 15px;
             .menu{
                 margin-bottom: 90px;
-                background: radial-gradient( $grad-dark);
+                @include bgmaindiv;
                 padding: 20px;
                 h3{
                     margin: 20px 0 20px 60px;

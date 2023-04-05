@@ -5,8 +5,7 @@
             animation-delay: 2s;
         }
         .section{
-            background-color: $grey-div-bg;
-            background: radial-gradient( $grad-dark);
+            @include bgmaindiv;
             margin: 5vh 4vw;
             font-size: $a-font;
             padding: 2vw;

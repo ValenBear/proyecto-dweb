@@ -1,6 +1,5 @@
 .sucursales{
-    background-color: $grey-div-bg;
-    background: radial-gradient( $grad-dark);
+    @include bgmaindiv;
     margin: 30px 40px;
     padding: 30px;
     height: 370px;

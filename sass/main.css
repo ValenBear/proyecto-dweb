@@ -1,3 +1,58 @@
+@keyframes fade_left { /* probando hacer una animacion yo*/
+  0% {
+    position: relative;
+    right: 1000px;
+    opacity: 0%;
+  }
+  10% {
+    position: relative;
+    right: 900px;
+    opacity: 10%;
+  }
+  20% {
+    position: relative;
+    right: 800px;
+    opacity: 20%;
+  }
+  30% {
+    position: relative;
+    right: 700px;
+    opacity: 30%;
+  }
+  40% {
+    position: relative;
+    right: 600px;
+    opacity: 40%;
+  }
+  50% {
+    position: relative;
+    right: 500px;
+    opacity: 50%;
+  }
+  60% {
+    position: relative;
+    right: 400px;
+    opacity: 60%;
+  }
+  70% {
+    position: relative;
+    right: 300px;
+    opacity: 70%;
+  }
+  80% {
+    position: relative;
+    right: 200px;
+    opacity: 80%;
+  }
+  90% {
+    position: relative;
+    right: 100px;
+    opacity: 10%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 .header ul li {
   width: 160px;
 }
@@ -55,6 +110,7 @@ footer p {
 }
 footer ul {
   display: flex;
+  flex-flow: wrap row;
   justify-content: center;
 }
 footer ul li {
@@ -188,6 +244,7 @@ footer ul li a .instagram {
   outline: 3px solid #ffffff;
   text-align: center;
   align-items: center;
+  box-shadow: #000 -5px 5px 10px;
 }
 .main-menu .supermenu .menu .medmenu div img:hover {
   opacity: 100%;
@@ -202,7 +259,6 @@ footer ul li a .instagram {
 }
 
 .sucursales {
-  background-color: #222222;
   background: radial-gradient(#222222, #151515);
   margin: 30px 40px;
   padding: 30px;
@@ -324,7 +380,6 @@ footer ul li a .instagram {
   animation-delay: 2s;
 }
 .main-conocenos article .section {
-  background-color: #222222;
   background: radial-gradient(#222222, #151515);
   margin: 5vh 4vw;
   font-size: 25px;

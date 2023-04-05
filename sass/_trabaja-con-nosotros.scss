@@ -57,7 +57,7 @@
         }
     }
     .trabajo-sm{
-        background: radial-gradient( $grad-dark);
+        @include bgmaindiv;
         margin: 10px 20px;
         padding: 20px;
         form div .enviar{
