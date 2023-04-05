@@ -65,9 +65,3 @@ $grad-dark: #222222, #151515;
     100%{opacity: 100%;
     }
 }
-
-@for $i from 1 through 10 {
-    .txt-font-#{$i}{
-        font-size: 10px * $i;
-    }
-}

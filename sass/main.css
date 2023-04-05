@@ -53,6 +53,14 @@
     opacity: 100%;
   }
 }
+.header .titulo h2 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 10px;
+  margin: 25px 0 15px;
+}
 .header ul li {
   width: 160px;
 }
@@ -130,6 +138,14 @@ footer ul li a .instagram {
   margin-bottom: 5px;
 }
 
+.main-index .titulo h2 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 10px;
+  margin: 25px 0 15px;
+}
 .main-index .ind-men {
   margin-top: 2vh;
   font-family: "Fjalla One", sans-serif;
@@ -244,7 +260,6 @@ footer ul li a .instagram {
   outline: 3px solid #ffffff;
   text-align: center;
   align-items: center;
-  box-shadow: #000 -5px 5px 10px;
 }
 .main-menu .supermenu .menu .medmenu div img:hover {
   opacity: 100%;
