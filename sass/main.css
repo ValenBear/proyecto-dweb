@@ -158,7 +158,7 @@ footer ul li a .instagram {
   display: flex;
   justify-content: center;
 }
-.main-index .intro h2 {
+.main-index .intro h3 {
   font-size: 37px;
   font-family: "Montserrat", sans-serif;
   text-align: center;
@@ -182,11 +182,13 @@ footer ul li a .instagram {
 .main-index .submenu-index {
   display: flex;
   flex-flow: wrap row;
-  justify-content: space-evenly;
-  margin: 0 10vw;
+}
+.main-index .submenu-index .carousel-inner .carousel-item a {
+  display: flex;
+  justify-content: center;
 }
 .main-index .submenu-index img {
-  height: 20vh;
+  height: 30vh;
   width: auto;
   opacity: 50%;
   border: 2px solid #000000;
@@ -240,6 +242,7 @@ footer ul li a .instagram {
 }
 .main-menu .supermenu .menu .medmenu {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 .main-menu .supermenu .menu .medmenu div {
@@ -247,7 +250,7 @@ footer ul li a .instagram {
   height: 40vh;
   width: 270px;
   margin: 25px 5px;
-  flex-flow: column wrap;
+  flex-flow: column;
   align-items: center;
   justify-content: center;
 }
@@ -500,12 +503,12 @@ footer ul li a .instagram {
     height: auto;
   }
   .main-index {
-    margin-top: 13vh;
+    margin-top: 1vh;
   }
-  .main-index h3 {
+  .main-index .ind-men {
     display: none;
   }
-  .main-index .intro h2 {
+  .main-index .intro h3 {
     font-size: 18px;
   }
   .main-index a {
@@ -530,7 +533,7 @@ footer ul li a .instagram {
     border: none;
   }
   .main--trabajo {
-    margin-top: 18vh;
+    margin-top: 14vh;
   }
   .main--trabajo .h3-trabajo h3 {
     font-size: 20px;
@@ -543,7 +546,7 @@ footer ul li a .instagram {
     font-size: 15px;
   }
   .main--sucursales {
-    margin-top: 18vh;
+    margin-top: 17vh;
   }
   .main--sucursales .sucursales {
     background: unset;

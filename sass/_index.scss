@@ -20,7 +20,7 @@
         margin: 10vh 5vw 5vh;
         display: flex;
         justify-content: center;
-        h2{
+        h3{
             font-size: $mt-font - 3;
             font-family: 'Montserrat', sans-serif;
             text-align: center;
@@ -44,10 +44,16 @@
     }
     .submenu-index{
         @include flxwrp;
-        justify-content: space-evenly;
-        margin: 0 10vw;
+        .carousel-inner{
+            .carousel-item{
+                a{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
         img{
-            height: 20vh;
+            height: 30vh;
             width: auto;
             opacity: 50%;
             @include bordimg;

@@ -90,12 +90,12 @@
     } 
 
     .main-index{
-        margin-top: 13vh;
-        h3{
+        margin-top: 1vh;
+        .ind-men{
             display: none;
         }
         .intro{
-            h2{
+            h3{
                 font-size: $par-font + 3;
             }
         }
@@ -123,7 +123,7 @@
     }
 
     .main--trabajo{
-        margin-top: 18vh;
+        margin-top: 14vh;
         .h3-trabajo h3{
             font-size: $par-font + 5;
         }
@@ -137,7 +137,7 @@
     }
 
     .main--sucursales{
-        margin-top: 18vh;
+        margin-top: 17vh;
         .sucursales{
             background: unset;
             margin: 0 20px;
