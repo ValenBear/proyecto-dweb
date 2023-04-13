@@ -21,7 +21,7 @@
         display: flex;
         justify-content: center;
         h3{
-            font-size: $mt-font - 3;
+            font-size: $mt-font - 5;
             font-family: 'Montserrat', sans-serif;
             text-align: center;
             animation-delay: 1s;
@@ -38,7 +38,7 @@
             margin-top: 0;
             transition: all 6s;
             &:hover{
-                opacity: 95%; /* es mera decoracion para que haga un fade lento a una opacacidad casi total */
+                opacity: 90%;
             }
         }
     }
@@ -53,8 +53,8 @@
             }
         }
         img{
-            height: 30vh;
-            width: auto;
+            height: auto;
+            width: 14vw;
             opacity: 50%;
             @include bordimg;
             margin: 1vh 0;

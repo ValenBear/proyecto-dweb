@@ -159,7 +159,7 @@ footer ul li a .instagram {
   justify-content: center;
 }
 .main-index .intro h3 {
-  font-size: 37px;
+  font-size: 35px;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   animation-delay: 1s;
@@ -177,7 +177,7 @@ footer ul li a .instagram {
   transition: all 6s;
 }
 .main-index .foto-fondo img:hover {
-  opacity: 95%; /* es mera decoracion para que haga un fade lento a una opacacidad casi total */
+  opacity: 90%;
 }
 .main-index .submenu-index {
   display: flex;
@@ -188,8 +188,8 @@ footer ul li a .instagram {
   justify-content: center;
 }
 .main-index .submenu-index img {
-  height: 30vh;
-  width: auto;
+  height: auto;
+  width: 14vw;
   opacity: 50%;
   border: 2px solid #000000;
   outline: 3px solid #ffffff;
@@ -450,6 +450,63 @@ footer ul li a .instagram {
     display: none;
   }
 }
+@media (min-width: 577px) and (max-width: 1024px) {
+  .header nav .nav-bar-mio ul li a {
+    font-size: 25px;
+  }
+  .main-index .foto-fondo img {
+    width: 75%;
+  }
+  .main-index .submenu-index .carousel-inner .carousel-item a img {
+    width: 30vw;
+  }
+  .main-menu .sub-nav-menu {
+    display: none;
+  }
+  .main-menu .supermenu {
+    margin: 0;
+    padding: 0;
+  }
+  .main-menu .supermenu .menu {
+    background: unset;
+    margin: 30px 0 15px 0;
+    padding: 0;
+  }
+  .main-menu .supermenu .menu h3 {
+    font-size: 30px;
+    margin: 20px 0 20px 60px;
+  }
+  .main-menu .supermenu .menu .medmenu {
+    display: flex;
+    justify-content: center;
+  }
+  .main-menu .supermenu .menu .medmenu div {
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 5vw;
+  }
+  .main-menu .supermenu .menu .medmenu div img {
+    height: 15vh;
+    width: auto;
+    border: 1, 5px solid #000000;
+    outline: 1, 5px solid #ffffff;
+    opacity: 100%;
+  }
+  .main-menu .supermenu .menu .medmenu div p {
+    font-size: 22px;
+  }
+  .main-menu .supermenu .menu .medmenu div .precio {
+    font-size: 25px;
+  }
+  .main--trabajo .trabajo-lg {
+    width: auto;
+    padding: 15px 30px;
+  }
+}
 @media (max-width: 576px) {
   hr {
     opacity: 100%;
@@ -627,6 +684,7 @@ footer ul li a .instagram {
     width: 100px;
     border: 1, 5px solid #000000;
     outline: 1, 5px solid #ffffff;
+    opacity: 100%;
   }
   .main-menu .supermenu .menu .medmenu div p {
     font-size: 13px;
