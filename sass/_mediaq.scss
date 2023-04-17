@@ -198,12 +198,28 @@
             height: auto;
             margin-top: 4.5vh;
         }
-        .submenu-index a img{
-            width: auto;
-            height: 15vh;
-            opacity: 70%;
-            outline: 1px white solid;
-            border: none;
+        .submenu-index{
+            a{
+                img{
+                    width: auto;
+                    height: 15vh;
+                    opacity: 70%;
+                    outline: 1px white solid;
+                    border: none;
+                }
+            }
+            .carousel-inner{
+                .carousel-item{
+                    h4{
+                        font-size: $par-font + 5;
+                    }
+                    a{
+                        img{
+                            width: 30vw;
+                        }
+                    }
+                }
+            }
         }
     }
 

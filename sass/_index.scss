@@ -46,6 +46,10 @@
         @include flxwrp;
         .carousel-inner{
             .carousel-item{
+                h4{
+                    text-align: center;
+                    font-size: $a-font;
+                }
                 a{
                     display: flex;
                     justify-content: center;
