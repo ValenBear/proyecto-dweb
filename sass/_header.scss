@@ -1,4 +1,5 @@
 .header{
+
     .titulo{
         h2{
             font-family: 'Fjalla One', sans-serif;
@@ -19,6 +20,11 @@
         font-size: $st-font;
     }    
     nav{
+        .container-fluid{
+            .navbar-toggler{
+                background: rgba(255, 255, 255, 0.6);
+            }
+        }
         .nav-bar-mio{
             width: 100%;
             height: 100%;
